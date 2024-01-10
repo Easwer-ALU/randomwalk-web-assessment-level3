@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd;
+    color: #424242;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.name-inputs {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #1976d2;
+    margin-bottom: 1em;
+}
+
+/* Scorecard Styles */
+#scorecard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#scorecard > div {
+    background: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Board Styles */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    border: none;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cell:hover {
+    background-color: #bbdefb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cell:empty:hover {
+    cursor: pointer;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#scoreboard {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Add more styles as needed */
